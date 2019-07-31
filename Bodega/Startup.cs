@@ -31,7 +31,7 @@ namespace Bodega
              services.AddSession(options =>
             {
                 // Set a short timeout for easy testing.
-                options.Cookie.Name = ".NetEscapades.Session"; ;
+                options.Cookie.Name = ".NetEscapades.Session";
                 options.IdleTimeout = TimeSpan.FromHours(2);
                 options.Cookie.HttpOnly = true;
             });
